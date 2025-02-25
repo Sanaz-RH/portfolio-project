@@ -1,0 +1,14 @@
+/* .space-grotesk-<uniquifier> {
+    font-family: "Space Grotesk", serif;
+    font-family: "Inter", serif;
+} */
+
+h1 {
+  font-family: "Space Grotesk", serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Inter", serif;
+  font-weight: normal;
+}
