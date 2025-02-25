@@ -5,13 +5,20 @@
   --default-font-family: "Inter", serif;
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font-family);
+}
+
+.project-description h2 {
+  font-size: 48px;
 }
 
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
@@ -28,7 +35,7 @@ p {
 .hero h1 {
   font-size: 96px;
   font-weight: bold;
-  line-height: 2;
+  margin-top: 20px;
 }
 .hero h2 {
   font-family: var(--default-font-family);
@@ -43,4 +50,39 @@ p {
   font-size: 18px;
   line-height: 24px;
   padding: 14px 30px;
+}
+
+.btn.btn.btn-branding-outline {
+  border-radius: 8px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  line-height: 24px;
+  padding: 14px 30px;
+}
+
+img {
+  min-height: 500px;
+  min-width: 500px;
+  object-fit: cover;
+}
+
+.project-description {
+  padding: 80px 40px;
+}
+
+@media (max-width: 990px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-description {
+    padding: 20px 40px;
+  }
 }
