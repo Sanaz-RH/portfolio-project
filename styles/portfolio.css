@@ -3,6 +3,7 @@
   --secondary-color: #e1f6f4;
   --heading-font-family: "Space Grotesk", serif;
   --default-font-family: "Inter", serif;
+  --logo-font-family: "Exo 2", sans-serif;
 }
 
 h1,
@@ -20,6 +21,47 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+.logo {
+  font-family: var(--logo-font-family);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.logo-small {
+  width: 40px; /* Keeps its original width */
+  height: 40px; /* Keeps its original height */
+  min-width: unset; /* Removes forced minimum size */
+  min-height: unset; /* Removes forced minimum size */
+  max-width: 100px; /* Adjust as needed */
+}
+
+nav {
+  padding: 20px 0 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .content-container img {
@@ -119,6 +161,10 @@ img {
   .content {
     margin: 30px;
     text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 }
 
