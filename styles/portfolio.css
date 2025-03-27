@@ -205,6 +205,10 @@ img {
   margin: 40px 30px;
 }
 
+.app-title {
+  color: black;
+}
+
 @media (max-width: 990px) {
   .hero h1 {
     font-size: 60px;
